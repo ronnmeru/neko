@@ -1,0 +1,25 @@
+
+    <div class="card" style="max-width: 1500px;">
+       <div class="carousel-inner">
+          <div class="carousel-item">
+             <%= image_tag asset_path("carousel-slide-1.jpeg") ,class:"c", width:"1500px",height:"800px" %>
+          </div>
+          <div class="carousel-item">
+            <%= image_tag asset_path("carousel-slide-2.jpeg") ,class:"c",  width:"1500px",height:"800px" %>
+          </div>
+          <div class="carousel-item">
+             <%= image_tag asset_path("carousel-slide-3.jpeg") ,class:"c", width:"1500px",height:"800px" %>
+          </div>
+      </div>
+      <div class="card-img-overlay">
+        <h1>ようこそ <i class="fas fa-cat"></i><strong>matinekoへ</strong>  !!</h1>
+        <p><i class="fas fa-cat"></i><strong>matinekoは空き時間に最適なサイト</strong>, </p>
+        <p>何も考えずに猫の画像を眺めているだけで</p>
+        <p> リラックスした時間を送ることが出来ます♪</p>
+        <div class="btn-wrapper col-10 mx-auto">
+          <div class="row">
+           <%= link_to "お問い合わせ", inquiry_path,class:"btn btn-info mb-3 customer-form" %>
+        </div>
+       </div>
+    </div>
+

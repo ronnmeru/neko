@@ -1,0 +1,23 @@
+<div>
+ <h1>新規投稿</h1>
+</div>
+
+<%= form_with model:@post, url: posts_path, method: :post,local:true do |f| %>
+<!--<= form_for @item do |f| %>-->
+     <div >
+        <p >投稿画像</p>
+        <%= f.attachment_field :image %>
+     </div>
+
+    <div >
+      <p >タイトル</p>
+      <%= f.text_field :name %>
+    </div>
+
+    <div >
+      <p >イントロダクション</p>
+      <%= f.text_area :introduction %>
+    </div>
+
+  <%= f.submit '新規登録', class: "btn btn-success" %>
+ <% end %>

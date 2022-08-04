@@ -1,0 +1,16 @@
+<% if current_user.liked_by?(post.id) %>
+ 
+    <%= link_to destroy_like_path(post), class: "like-link", method: :DELETE, remote: true do %>
+   <%= post.likes.count %>
+      <i class="fa fa-heart unlike-btn"></i>
+    <% end %>
+ 
+<% else %>
+
+    <%= link_to create_like_path(post), class: "like-link", method: :POST, remote: true do %>
+    <%= post.likes.count %>   
+    <i class="fa fa-heart like-btn"></i>
+    <% end %>
+    
+ 
+<% end %>

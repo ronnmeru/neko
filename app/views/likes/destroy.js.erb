@@ -1,0 +1,4 @@
+<%# app/views/likes/destroy.js.erb %>
+
+
+$('#likes_buttons_<%= @post.id %>').html("<%= j(render "likes/like", post: @post) %>");
