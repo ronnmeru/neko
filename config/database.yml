@@ -29,4 +29,10 @@ production:
   collation: utf8mb4_general_ci
   host: <%= ENV['DB_HOST'] %>
   username: <%= ENV['DB_USERNAME'] %>
-  password: <%= ENV['DB_PASSWORD'] %>
+  password: <%= ENV['DB_PASSWORD
+  production:
+#半角スペース２個分の空白を開ける
+    <<: *default
+    adapter: postgresql
+    encoding: unicode
+    pool: 5
