@@ -78,5 +78,5 @@ group :development, :test do
   gem 'sqlite3' #do ~ end内部に追加。他のgemは残してください。
 end
 group :production do
-gem 'mysql2'
+  gem 'mysql2'
 end
