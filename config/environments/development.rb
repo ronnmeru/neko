@@ -60,4 +60,16 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   config.hosts<< "27eb3fea137b43529bf86903cfa48000.vfs.cloud9.ap-northeast-1.amazonaws.com"#rails6アップデート時追加
+
+config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.gmail.com',
+    port:                  587,
+    domain:               'gmail.com',
+    user_name:            ENV['SEND_MAIL'],
+    password:             ENV['SEND_MAIL_PASSWORD'],
+    authentication:       'plain',
+    enable_starttls_auto:  true
+}
 end
