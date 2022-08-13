@@ -17,6 +17,10 @@
 
 ## 設計書
  WBS
+ 
+## テストユーザ
+test2@example.com
+ttrr4455
 
 ## チャレンジ要素一覧
 https://docs.google.com/spreadsheets/d/1Gi6CFZOvC2ldrgXOmHLV93ie3LciA7hrMOiziNZE-gs/edit#gid=0
