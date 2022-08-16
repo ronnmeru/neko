@@ -18,6 +18,9 @@
 ## 設計書
  WBS
  
+## URL
+ https://matineko.herokuapp.com
+
 ## テストユーザ
 test2@example.com
 ttrr4455
